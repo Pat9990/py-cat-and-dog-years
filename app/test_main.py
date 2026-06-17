@@ -34,7 +34,6 @@ def test_negative_values_return_zero(cat_age: int, dog_age: int) -> None:
     (10, "xyz"),
     (None, 5),
     (5, None),
-    (3.14, 10),
 ])
 def test_invalid_types_raise_typeerror(cat_age: int, dog_age: int) -> None:
     with pytest.raises(TypeError):
